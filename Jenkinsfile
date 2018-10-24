@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('install') {
       steps {
-        sh './mvnw clean compile install'
         sh 'chmod +x mvnw'
+        sh './mvnw clean install'
       }
     }
   }
