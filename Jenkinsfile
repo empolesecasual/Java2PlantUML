@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh 'mvn clean compile install'
+        sh 'mvnw clean compile install'
       }
     }
   }
